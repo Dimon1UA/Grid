@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.container div{
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+body{
+    background: rgb(103, 167, 95) ;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+                        'header header header'
+                        'sidebar content nav'
+                        'footer footer footer';
+    grid-gap: 10px;
+    grid-template-columns: 200px 1fr 150px;
+    /*  */
+}
+.header{
+    grid-area: header;
+    border: 1px solid rgb(10, 78, 27);
+}
+.header h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+.nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    height: 100px;
+    width: 100%;
+    transition: all 0.5s;
+    margin: auto;  
+}
+.nav a:hover{
+    background-color: rgb(7, 155, 19);
+    color:rgb(255, 255, 255);
+    border: 3px solid rgb(108, 113, 119);
+
+}
+.nav > ul{
+    /* display: flex; */
+    position: relative;
+    padding-inline-start: 0px;
+}
+.nav ul li{
+    display: inline-block;
+    background-color: rgb(10, 78, 27);
+    width: 100%;
+    height: 100px;
+    margin: 20px 0;
+}
+.borde{
+    border-radius: 20px 20px 0 0;
+}
+.borde_2{
+    background-color: rgb(0, 195, 255);
+    border-radius: 0 0 20px 20px ;
+}
+.nav ul ul{
+    display: none;
+    position: absolute;
+}
+.nav ul li:hover > ul{
+    display: block;
+    width: 100%;
+
+}
+.nav ul ul li{
+    display: block;
+    margin: 0;
+    position: relative;
+    right: 140%;
+    top: -120px;
+    width: 100%;
+    border: 2px solid rgb(7, 155, 19);
+}
+.sidebar{
+    grid-area: sidebar;
+    align-self: start;
+}
+.sidebar div{
+    width: 90%;
+    height: 100px;
+    margin-bottom: 30px;
+    border: 1px solid black;
+}
+.sidebar div:hover{
+    border: 5px solid rgb(10, 78, 27);
+}
+.a1{
+    background: url(./img/1620043168_51-p-dachnii-inventar-na-uchastke-59.jpg)no-repeat;
+    background-size: 135%;
+}
+.a2{
+    background: url(./img/lawn-mower-1593898_1280-min-674x352.jpg) no-repeat;
+    background-size: 170%;
+    background-position-x: 35%;
+}
+.a3{
+    background:url(./img/64788.p2dx3o.790.jpg) no-repeat;
+    background-size: 140%;
+}
+.a4{
+    background: url(./img/gardena-wassermengenzahler-67d2bb4f.jpg) no-repeat;
+    background-size: 135%;
+}
+.a5{
+    background: url(./img/348667076_w700_h500_urna-dlya-dachi.jpg) no-repeat;
+    background-size: 120%;
+}
+.content{
+    grid-area: content;
+    background: url(./img/1-11.jpg) no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+}
+.content h2{
+    font-size: 90px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    
+}
+.content div{
+    width: 300px;
+    margin-left: 200px;
+}
+.nav{
+    grid-area: nav;
+    align-self: start;
+    width: 100px;
+    height: 100%;
+    text-align: center;
+}
+.footer{
+    grid-area: footer;
+}
+.networks{
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+}
+.lynks{
+    width: 50px;
+    height: 50px;
+    
+}
+.fa-instagram-square{
+    font-size: 50px;
+    background-color: #2AA5A0;
+    background-image: radial-gradient(circle at 32% 105%, yellow 0%, rgb(255, 47, 0) 24%, rgb(255, 0, 183) 60%, rgb(106, 0, 255) 80%, blue 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fa-telegram{
+    color: rgb(0, 117, 250);
+    font-size: 50px;
+    
+}
+.h3{
+    color: white;
+    font-size: 40px;
+    width: 300px;
+}
